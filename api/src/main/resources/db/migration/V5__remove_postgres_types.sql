@@ -1,0 +1,11 @@
+ALTER TABLE users
+    ALTER COLUMN role TYPE VARCHAR,
+    ALTER COLUMN status TYPE VARCHAR;
+
+ALTER TABLE services
+    ALTER COLUMN type TYPE VARCHAR,
+    ALTER COLUMN status TYPE VARCHAR;
+
+DROP TYPE service_type;
+DROP TYPE status_type;
+DROP TYPE user_role_type;
